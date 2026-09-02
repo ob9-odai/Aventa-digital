@@ -1,33 +1,27 @@
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
-
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
+function toggleMenu() {
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("active");
+}
 
 
+// إغلاق القائمة عند الضغط على أي رابط
 document.querySelectorAll("nav a").forEach(link => {
-
     link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
+        document.getElementById("nav").classList.remove("active");
     });
-
 });
 
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+// أزرار المنتجات
+document.querySelectorAll(".food-bottom button").forEach(button => {
 
-    link.addEventListener("click", function(e) {
+    button.addEventListener("click", () => {
 
-        const target = document.querySelector(this.getAttribute("href"));
+        button.innerText = "✓";
 
-        if (target) {
-            e.preventDefault();
-
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
+        setTimeout(() => {
+            button.innerText = "+";
+        }, 1500);
 
     });
 

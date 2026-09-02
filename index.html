@@ -4,635 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aventa Digital | Digital Agency</title>
+    <title>Urban Bites | مطعم عصري</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">URBAN<span>BITES</span></div>
 
-    <div class="container nav-content">
-
-        <a href="#home" class="logo">
-            Aventa<span>Digital</span>
-        </a>
-
-        <nav id="navMenu">
+        <nav id="nav">
             <a href="#home">الرئيسية</a>
-            <a href="#services">الخدمات</a>
-            <a href="#projects">أعمالنا</a>
+            <a href="#menu">القائمة</a>
             <a href="#about">من نحن</a>
-            <a href="#contact">تواصل</a>
+            <a href="#contact">تواصل معنا</a>
         </nav>
 
-        <a href="#contact" class="nav-btn">
-            ابدأ مشروعك
-        </a>
+        <a href="#contact" class="nav-btn">اطلب الآن</a>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
-
-    </div>
-
-</header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
 
 
-<!-- HERO -->
+    <!-- Hero -->
+    <section class="hero" id="home">
 
-<section class="hero" id="home">
+        <div class="hero-content">
 
-    <div class="hero-bg"></div>
-
-    <div class="container hero-content">
-
-        <div class="hero-text">
-
-            <div class="badge">
-                ✦ Digital Solutions Agency
-            </div>
+            <span class="badge">🍔 طعم يستحق التجربة</span>
 
             <h1>
-                نحول أفكارك إلى
-                <span>تجارب رقمية.</span>
+                مذاق مختلف،
+                <span>تجربة لا تُنسى.</span>
             </h1>
 
             <p>
-                Aventa Digital تساعد الشركات والأفراد على بناء
-                صفحات ومواقع حديثة، سريعة واحترافية تساعدهم
-                على الظهور بشكل أقوى على الإنترنت.
+                أطباق طازجة، مكونات مختارة بعناية،
+                وتجربة طعام صُممت لتكون مختلفة.
             </p>
 
             <div class="hero-buttons">
-
-                <a href="#projects" class="primary-btn">
-                    شاهد أعمالنا
-                </a>
-
-                <a href="#contact" class="secondary-btn">
-                    تواصل معنا
-                </a>
-
-            </div>
-
-            <div class="trust">
-
-                <div class="avatars">
-                    <span>A</span>
-                    <span>V</span>
-                    <span>D</span>
-                </div>
-
-                <div>
-                    <strong>حلول رقمية باحتراف</strong>
-                    <small>تصميم • تطوير • Landing Pages</small>
-                </div>
-
+                <a href="#menu" class="primary-btn">استكشف القائمة</a>
+                <a href="#contact" class="secondary-btn">تواصل معنا</a>
             </div>
 
         </div>
 
+        <div class="hero-card">
 
-        <div class="hero-visual">
-
-            <div class="browser">
-
-                <div class="browser-top">
-
-                    <div class="dots">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-
-                    <div class="address">
-                        aventadigital.com
-                    </div>
-
-                </div>
-
-                <div class="browser-body">
-
-                    <div class="mini-nav">
-                        <strong>Aventa</strong>
-
-                        <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-
-                    <div class="mini-content">
-
-                        <small>DIGITAL EXPERIENCE</small>
-
-                        <h3>
-                            Build something
-                            <b>great.</b>
-                        </h3>
-
-                        <div class="mini-button"></div>
-
-                        <div class="mini-cards">
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="food-circle">
+                🍔
             </div>
 
-            <div class="floating-card card-a">
-                ⚡ سريع
-            </div>
-
-            <div class="floating-card card-b">
-                ✦ احترافي
+            <div class="floating-card">
+                <strong>4.9 ⭐</strong>
+                <small>+500 تقييم</small>
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- SERVICES -->
+    <!-- Features -->
+    <section class="features">
 
-<section class="section dark-section" id="services">
+        <div class="feature">
+            <div class="icon">🥩</div>
+            <h3>مكونات طازجة</h3>
+            <p>نختار أفضل المكونات يوميًا.</p>
+        </div>
 
-    <div class="container">
+        <div class="feature">
+            <div class="icon">👨‍🍳</div>
+            <h3>طهاة محترفون</h3>
+            <p>خبرة وطعم في كل طبق.</p>
+        </div>
 
-        <div class="section-heading">
+        <div class="feature">
+            <div class="icon">⚡</div>
+            <h3>خدمة سريعة</h3>
+            <p>طلبك يوصل بأسرع وقت.</p>
+        </div>
 
-            <span class="section-label">
-                خدماتنا
-            </span>
+    </section>
+
+
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+
+        <div class="section-title">
+            <span>OUR MENU</span>
+            <h2>الأكثر طلبًا</h2>
+            <p>جرب أطباقنا المميزة.</p>
+        </div>
+
+        <div class="menu-grid">
+
+            <div class="food-card">
+                <div class="food-image burger">🍔</div>
+
+                <div class="food-info">
+                    <h3>Urban Burger</h3>
+                    <p>برجر لحم، جبنة، صوص خاص وخضار طازجة.</p>
+
+                    <div class="food-bottom">
+                        <strong>5.50 د.أ</strong>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-card">
+                <div class="food-image pizza">🍕</div>
+
+                <div class="food-info">
+                    <h3>Special Pizza</h3>
+                    <p>عجينة طازجة، جبنة ومكونات مختارة.</p>
+
+                    <div class="food-bottom">
+                        <strong>6.00 د.أ</strong>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-card">
+                <div class="food-image chicken">🍗</div>
+
+                <div class="food-info">
+                    <h3>Crispy Chicken</h3>
+                    <p>دجاج مقرمش مع صوص Urban الخاص.</p>
+
+                    <div class="food-bottom">
+                        <strong>4.75 د.أ</strong>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            🍽️
+        </div>
+
+        <div class="about-content">
+
+            <span>ABOUT US</span>
 
             <h2>
-                كل ما تحتاجه
-                <span>رقمياً.</span>
+                أكثر من مجرد
+                <strong>وجبة.</strong>
             </h2>
 
             <p>
-                حلول بسيطة واحترافية مصممة لمساعدة مشروعك على النمو.
+                في Urban Bites نؤمن أن الطعام تجربة كاملة.
+                لذلك نهتم بكل التفاصيل، من اختيار المكونات
+                إلى طريقة تقديم الطبق.
             </p>
 
-        </div>
-
-
-        <div class="services-grid">
-
-            <div class="service-card">
-
-                <div class="icon">◈</div>
-
-                <h3>Landing Pages</h3>
-
-                <p>
-                    صفحات هبوط عالية الجودة مصممة لتحويل الزوار
-                    إلى عملاء.
-                </p>
-
-                <span class="service-number">01</span>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="icon">⌘</div>
-
-                <h3>Web Design</h3>
-
-                <p>
-                    تصميم مواقع وصفحات حديثة متجاوبة مع الهاتف
-                    والكمبيوتر.
-                </p>
-
-                <span class="service-number">02</span>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="icon">✦</div>
-
-                <h3>Digital Solutions</h3>
-
-                <p>
-                    حلول رقمية مخصصة تساعدك على تقديم مشروعك
-                    بصورة أقوى.
-                </p>
-
-                <span class="service-number">03</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PROJECTS -->
-
-<section class="section" id="projects">
-
-    <div class="container">
-
-        <div class="section-top">
-
-            <div>
-
-                <span class="section-label">
-                    أعمالنا
-                </span>
-
-                <h2>
-                    مشاريع مصممة
-                    <span>لتلفت الانتباه.</span>
-                </h2>
-
-            </div>
-
-            <p>
-                نماذج من أنواع المواقع والصفحات التي نستطيع تنفيذها.
-            </p>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-            <!-- PROJECT 1 -->
-
-<a href="projects/restaurant-landing/index.html" class="project project-large">
-                <div class="project-preview restaurant">
-
-                    <div class="preview-content">
-
-                        <small>RESTAURANT</small>
-
-                        <h3>
-                            Urban<br>
-                            <span>Bites</span>
-                        </h3>
-
-                        <div class="preview-line"></div>
-
-                        <div class="food-circles">
-                            🍔 🍕 🍟
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div>
-                        <span>Landing Page</span>
-                        <h3>Urban Bites</h3>
-                    </div>
-
-                    <div class="arrow">↗</div>
-
-                </div>
-
-            </a>
-
-
-            <!-- PROJECT 2 -->
-
-<a href="projects/nexora/index.html" class="project">
-                <div class="project-preview nexora">
-
-                    <div class="dashboard">
-
-                        <div class="dash-top">
-                            <b>NEXORA</b>
-                            <span>•••</span>
-                        </div>
-
-                        <div class="dash-number">
-                            $24,580
-                        </div>
-
-                        <div class="chart">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div>
-                        <span>Business Website</span>
-                        <h3>NEXORA</h3>
-                    </div>
-
-                    <div class="arrow">↗</div>
-
-                </div>
-
-            </a>
-
-
-            <!-- PROJECT 3 -->
-
-<a href="projects/coachly/index.html" class="project">
-                <div class="project-preview coachly">
-
-                    <div class="coach-preview">
-
-                        <div class="coach-circle">
-                            👨🏻‍💼
-                        </div>
-
-                        <small>PERSONAL COACH</small>
-
-                        <h3>
-                            Become your
-                            <span>best version.</span>
-                        </h3>
-
-                        <div class="coach-button">
-                            START NOW
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div>
-                        <span>Personal Brand</span>
-                        <h3>COACHLY</h3>
-                    </div>
-
-                    <div class="arrow">↗</div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="section about-section" id="about">
-
-    <div class="container about-grid">
-
-        <div class="about-visual">
-
-            <div class="big-letter">
-                A
-            </div>
-
-            <div class="about-card">
-
-                <strong>Aventa Digital</strong>
-
-                <span>
-                    Digital experiences that matter.
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="about-text">
-
-            <span class="section-label">
-                من نحن
-            </span>
-
-            <h2>
-                نركز على شيء واحد:
-                <span>أن يظهر مشروعك بشكل أفضل.</span>
-            </h2>
-
-            <p>
-                في Aventa Digital نؤمن أن الموقع الجيد ليس مجرد
-                شكل جميل. يجب أن يكون سريعاً، واضحاً، سهل الاستخدام
-                ويعكس قيمة المشروع أمام العميل.
-            </p>
-
-            <div class="about-list">
+            <div class="stats">
 
                 <div>
-                    <b>01</b>
-                    <span>تصميم حديث</span>
+                    <strong>5+</strong>
+                    <span>سنوات خبرة</span>
                 </div>
 
                 <div>
-                    <b>02</b>
-                    <span>تجربة مستخدم واضحة</span>
+                    <strong>5000+</strong>
+                    <span>عميل سعيد</span>
                 </div>
 
                 <div>
-                    <b>03</b>
-                    <span>Responsive على جميع الأجهزة</span>
-                </div>
-
-                <div>
-                    <b>04</b>
-                    <span>تنفيذ سريع ومرن</span>
+                    <strong>30+</strong>
+                    <span>طبق مميز</span>
                 </div>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- PROCESS -->
-
-<section class="section dark-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                طريقة العمل
-            </span>
-
-            <h2>
-                من الفكرة إلى
-                <span>الموقع.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="process">
-
-            <div class="process-item">
-
-                <div class="number">01</div>
-
-                <h3>نتعرف على مشروعك</h3>
-
-                <p>
-                    نفهم فكرتك وأهدافك والجمهور المستهدف.
-                </p>
-
-            </div>
-
-
-            <div class="process-item">
-
-                <div class="number">02</div>
-
-                <h3>نصمم</h3>
-
-                <p>
-                    نحول الفكرة إلى تصميم واضح واحترافي.
-                </p>
-
-            </div>
-
-
-            <div class="process-item">
-
-                <div class="number">03</div>
-
-                <h3>نطور</h3>
-
-                <p>
-                    نبني الصفحة ونجهزها لجميع الأجهزة.
-                </p>
-
-            </div>
-
-
-            <div class="process-item">
-
-                <div class="number">04</div>
-
-                <h3>نسلم</h3>
-
-                <p>
-                    تستلم مشروعاً جاهزاً للاستخدام والنشر.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta" id="contact">
-
-    <div class="cta-glow"></div>
-
-    <div class="container cta-content">
-
-        <span class="section-label">
-            هل لديك مشروع؟
-        </span>
-
-        <h2>
-            خلينا نبني
-            <span>شيء مميز.</span>
-        </h2>
-
-        <p>
-            أخبرنا بفكرتك وسنساعدك على تحويلها إلى تجربة رقمية
-            احترافية.
-        </p>
-
-        <div class="cta-buttons">
-
-            <a href="mailto:hello@aventadigital.com" class="primary-btn">
-                تواصل معنا
-            </a>
-
-            <a href="#projects" class="secondary-btn">
-                مشاهدة الأعمال
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <div class="container footer-content">
+    <!-- CTA -->
+    <section class="cta">
 
         <div>
+            <span>جاهز للتجربة؟</span>
 
-            <div class="logo">
-                Aventa<span>Digital</span>
-            </div>
+            <h2>
+                اطلب وجبتك المفضلة الآن
+            </h2>
 
             <p>
-                Digital solutions built for modern businesses.
+                اضغط على الزر وتواصل معنا مباشرة.
             </p>
+        </div>
+
+        <a href="https://wa.me/962700000000" class="primary-btn">
+            اطلب عبر WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <span>CONTACT</span>
+            <h2>تواصل معنا</h2>
+        </div>
+
+        <div class="contact-box">
+
+            <div>
+                <strong>📍 الموقع</strong>
+                <p>عمّان، الأردن</p>
+            </div>
+
+            <div>
+                <strong>📞 الهاتف</strong>
+                <p>07XXXXXXXX</p>
+            </div>
+
+            <div>
+                <strong>🕐 أوقات العمل</strong>
+                <p>10:00 صباحًا — 12:00 منتصف الليل</p>
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="footer-links">
 
-            <a href="#home">الرئيسية</a>
-            <a href="#services">الخدمات</a>
-            <a href="#projects">الأعمال</a>
-            <a href="#contact">تواصل</a>
+    <!-- Footer -->
+    <footer>
 
+        <div class="logo">
+            URBAN<span>BITES</span>
         </div>
 
-    </div>
+        <p>
+            © 2026 Urban Bites. All rights reserved.
+        </p>
+
+        <p class="made">
+            Designed by <strong>Aventa Digital</strong>
+        </p>
+
+    </footer>
 
 
-    <div class="copyright">
-
-        © 2026 Aventa Digital — All Rights Reserved.
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
